@@ -1,0 +1,13 @@
+.text-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease;
+  padding-right: 20px;
+  font-size: 125%
+}
+
+.text-link:hover {
+  color:aliceblue; /* Bootstrap primary color or pick a modern blue */
+  border-bottom: 0px solid #c6d3ff;
+  cursor: pointer;
+}

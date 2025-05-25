@@ -1,0 +1,9 @@
+function Resources() {
+  return (
+    <>
+      <p>Resources</p>
+    </>
+  );
+}
+
+export default Resources;

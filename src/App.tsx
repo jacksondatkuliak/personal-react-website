@@ -1,9 +1,11 @@
-function App() {
+const App = () => {
   return (
     <>
-      <p>test</p>
+      <div style={{ zIndex: 1 }}>
+        <h1>test</h1>
+      </div>
     </>
   );
-}
+};
 
 export default App;
