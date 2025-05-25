@@ -1,3 +1,4 @@
+import "./main.css";
 function About() {
   return (
     <>
