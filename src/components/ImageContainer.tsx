@@ -12,7 +12,7 @@ type Props = {
   date: string; // date
 };
 
-const image_style = { width: "45%", display: "inline-block", padding: "0%" };
+const image_style = { width: "60%", padding: "0%" };
 const name_style = {
   paddingTop: "10px",
   marginBottom: "0px",
@@ -27,34 +27,36 @@ const text_style = { margin: 0, fontSize: "115%" };
 function ImageContainer(props: Props) {
   return (
     <>
-      <img
-        src={props.image}
-        className="image-with-border"
-        style={image_style}
-      ></img>
-      <p style={name_style}>
-        <a
-          href={props.imageLink}
-          className="text-link"
-          target="_blank"
-          rel="noopener"
-        >
-          {props.name}
-        </a>
-      </p>
-      <p style={text_style}>
-        Total Integration Time: <b>{props.int_time}</b>
-        <br />
-        Camera: <b>{props.camera}</b>
-        <br />
-        Focal Length: <b>{props.fl}</b>
-        <br />
-        Mount: <b>{props.mount}</b>
-        <br />
-        Filters: <b>{props.filters}</b>
-        <br />
-        Date: <b>{props.date}</b>
-      </p>
+      <div>
+        <img
+          src={props.image}
+          className="image-with-border"
+          style={image_style}
+        ></img>
+        <p style={name_style}>
+          <a
+            href={props.imageLink}
+            className="text-link"
+            target="_blank"
+            rel="noopener"
+          >
+            {props.name}
+          </a>
+        </p>
+        <p style={text_style}>
+          Total Integration Time: <b>{props.int_time}</b>
+          <br />
+          Camera: <b>{props.camera}</b>
+          <br />
+          Focal Length: <b>{props.fl}</b>
+          <br />
+          Mount: <b>{props.mount}</b>
+          <br />
+          Filters: <b>{props.filters}</b>
+          <br />
+          Date: <b>{props.date}</b>
+        </p>
+      </div>
     </>
   );
 }
