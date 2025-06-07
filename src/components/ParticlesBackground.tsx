@@ -22,7 +22,6 @@ function ParticlesBackground() {
         },
       });
     };
-
     initParticles();
   }, []);
   return <Particles />;

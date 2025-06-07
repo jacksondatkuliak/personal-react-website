@@ -5,8 +5,11 @@ import ParticlesBackground from "./components/ParticlesBackground";
 function Layout() {
   return (
     <>
+      {/**<ParticlesBackground />*/}
       <ParticlesBackground />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }

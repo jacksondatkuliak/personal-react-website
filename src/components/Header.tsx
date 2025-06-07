@@ -9,39 +9,50 @@ function Header() {
         WebkitBackdropFilter: "blur(10px)", // Safari support
         padding: "1rem",
         borderBottom: "1px solid rgba(255, 255, 255, 0.2)", // subtle bottom border
+        display: "flex",
+        flexWrap: "wrap", // allows wrapping
+        justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center", // center horizontally
+          flex: "1 1 300px", // grow, shrink, base width
+          minWidth: "200px",
         }}
       >
         <a href="/" className="text-link">
           <h2 style={{ margin: 0 }}>Jackson Datkuliak's Astrophotography</h2>
         </a>
-        {/* Links */}
-        <div style={{ marginLeft: "auto", paddingRight: "10px" }}>
-          <a
-            style={link_style}
-            className="text-link"
-            href="https://www.astrobin.com/users/jdat"
-            target="_blank"
-            rel="noopener"
-          >
-            AstroBin
-          </a>
-          <a style={link_style} className="text-link" href="/blog">
-            Blog
-          </a>
-          <a style={link_style} className="text-link" href="/contact">
-            Contact
-          </a>
-          <a style={link_style} className="text-link" href="/about">
-            About
-          </a>
-        </div>
+      </div>
+      {/* Links */}
+      <div
+        style={{
+          flex: "",
+          minWidth: "200px",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "flex-end",
+        }}
+      >
+        <a
+          style={link_style}
+          className="text-link"
+          href="https://www.astrobin.com/users/jdat"
+          target="_blank"
+          rel="noopener"
+        >
+          AstroBin
+        </a>
+        <a style={link_style} className="text-link" href="/blog">
+          Blog
+        </a>
+        <a style={link_style} className="text-link" href="/contact">
+          Contact
+        </a>
+        <a style={link_style} className="text-link" href="/about">
+          About
+        </a>
       </div>
     </header>
   );

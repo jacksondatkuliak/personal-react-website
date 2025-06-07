@@ -19,6 +19,7 @@ const name_style = {
   fontSize: "125%",
 };
 const text_style = { margin: 0, fontSize: "115%" };
+const div_style = { padding: "20px" };
 /**
  * Creates image container to render on main page
  *
@@ -27,7 +28,7 @@ const text_style = { margin: 0, fontSize: "115%" };
 function ImageContainer(props: Props) {
   return (
     <>
-      <div>
+      <div style={div_style}>
         <img
           src={props.image}
           className="image-with-border"

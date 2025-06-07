@@ -1,28 +1,35 @@
 import "./main.css";
 import { Outlet } from "react-router";
+
+const containerStyle = {
+  width: "90vw",
+  margin: "1vh auto 0 auto",
+};
+
+/**
+ * Renders skeleton for blog. <Outlet /> renders individual blog posts.
+ * @returns blog content
+ */
 function Blog() {
   return (
     <>
-      <div
-        style={{
-          width: "90%",
-          paddingTop: "1%",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
+      <div style={containerStyle}>
         <div style={{ display: "flex" }}>
-          <h3>Blog</h3>
+          <h4 style={{ marginRight: "3vw" }}>
+            <a className="text-link" href="/blog">
+              Blog
+            </a>
+          </h4>
           <div
             style={{
               marginLeft: "auto",
               display: "flex",
-              paddingRight: "30px",
+              marginRight: "3vw",
             }}
           >
             <h3>
               <a
-                className="text-link"
+                className="text-link-alt"
                 href="/blog/acquisition"
                 style={{
                   fontSize: "80%",
@@ -36,7 +43,7 @@ function Blog() {
             <h3>
               <a
                 style={{ fontSize: "80%", paddingRight: "30px" }}
-                className="text-link"
+                className="text-link-alt"
                 href="/blog/processing"
               >
                 What is AP: Image Processing
@@ -44,7 +51,7 @@ function Blog() {
             </h3>
             <h3>
               <a
-                className="text-link"
+                className="text-link-alt"
                 href="/blog/resources"
                 style={{ fontSize: "80%" }}
               >
