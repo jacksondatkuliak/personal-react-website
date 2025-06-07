@@ -6,14 +6,6 @@ import "../main.css";
  * @returns Processing blog post
  */
 function Processing() {
-  // styles
-  const imageContainer = {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-evenly",
-    textAlign: "center",
-  };
-
   return (
     <>
       <p>
@@ -60,7 +52,14 @@ function Processing() {
         with just the remaining <b>signal</b> from the astronomical object we
         are trying to image present.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img src="/images/blog/whatisap/dark.jpg" className="blogImage" />
           <figcaption>Dark frame (stretched)</figcaption>
@@ -70,7 +69,14 @@ function Processing() {
           <figcaption>Flat Frame</figcaption>
         </figure>
       </div>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img
             className="blogImage"
@@ -105,7 +111,14 @@ function Processing() {
         can see what we are actually doing to the image while it’s still in a
         linear state.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img
             className="blogImage"
@@ -156,7 +169,14 @@ function Processing() {
         </a>
         .
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/noBE.jpg" />
           <figcaption>A raw stacked image with no processing</figcaption>
@@ -195,7 +215,14 @@ function Processing() {
         deconvolution to ensure it was applied correctly, especially when using
         automated tools like BlurXTerminator.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/noblurx.jpg" />
           <figcaption>Image with no deconvolution</figcaption>
@@ -244,7 +271,14 @@ function Processing() {
         faint details in each channel without dominating the image with one
         channel/color.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/nospcc.jpg" />
           <figcaption>Image with no color calibration applied</figcaption>
@@ -298,7 +332,14 @@ function Processing() {
         substantial dynamic range, such as the core of the Andromeda galaxy or
         the Orion nebula.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/stretch1.jpg" />
           <figcaption>Starless image after a small stretch</figcaption>
@@ -334,7 +375,14 @@ function Processing() {
         reduction, and one must be careful when applying it as noise reduction
         algorithms can be <b>destructive</b>.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/nonr.jpg" />
           <figcaption>Image with no noise reduction applied</figcaption>
@@ -366,7 +414,14 @@ function Processing() {
         worked correctly. I do not use star removal at all if it is not needed
         as I do not want to risk destroying the data I am working on.{" "}
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/stars.jpg" />
           <figcaption>An image with stars</figcaption>

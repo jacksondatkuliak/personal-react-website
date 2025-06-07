@@ -6,14 +6,6 @@ import "../main.css";
  * @returns Processing blog post
  */
 function Acquisition() {
-  // styles
-  const imageContainer = {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-evenly",
-    textAlign: "center",
-  };
-
   return (
     <>
       <p>
@@ -93,7 +85,14 @@ function Acquisition() {
         <b>stars are pinpoint and not shaped like lines</b>, the subexposure is
         good to stack into a final image.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img
             className="blogImage"
@@ -146,7 +145,14 @@ function Acquisition() {
         telescopes as the focus point will shift throughout the night as the
         telescope's temperature changes.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img
             className="blogImage"
@@ -181,7 +187,14 @@ function Acquisition() {
         the mount about every second, keeping the telescope positioned perfectly
         on the sky so the main imaging camera can take much longer subexposures.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img
             className="blogImage"
@@ -235,7 +248,14 @@ function Acquisition() {
         there is a multitude of community made plugins available to make the
         complete automation of image acquisition possible.
       </p>
-      <div style={imageContainer}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-evenly",
+          textAlign: "center",
+        }}
+      >
         <figure>
           <img className="blogImage" src="/images/blog/whatisap/asiair.jpg" />
           <figcaption>The popular ZWO ASIAir</figcaption>

@@ -1,4 +1,9 @@
-// Header.jsx
+import { NavLink } from "react-router";
+
+/**
+ * Header with NavLinks
+ * @returns Page Header
+ */
 function Header() {
   const link_style = { paddingRight: "20px" };
   return (
@@ -21,9 +26,9 @@ function Header() {
           minWidth: "200px",
         }}
       >
-        <a href="/" className="text-link">
+        <NavLink to="/" className="text-link">
           <h2 style={{ margin: 0 }}>Jackson Datkuliak's Astrophotography</h2>
-        </a>
+        </NavLink>
       </div>
       {/* Links */}
       <div
@@ -44,15 +49,15 @@ function Header() {
         >
           AstroBin
         </a>
-        <a style={link_style} className="text-link" href="/blog">
+        <NavLink style={link_style} className="text-link" to="/blog">
           Blog
-        </a>
-        <a style={link_style} className="text-link" href="/contact">
+        </NavLink>
+        <NavLink style={link_style} className="text-link" to="/contact">
           Contact
-        </a>
-        <a style={link_style} className="text-link" href="/about">
+        </NavLink>
+        {/*<NavLink style={link_style} className="text-link" to="/about">
           About
-        </a>
+        </NavLink>*/}
       </div>
     </header>
   );
