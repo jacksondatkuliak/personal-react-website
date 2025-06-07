@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import { createRoot } from "react-dom/client";
 import Home from "./Home.tsx";
 //import About from "./About.tsx";
@@ -13,7 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./main.css";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
+  <HashRouter>
     <Header />
     <Layout />
     <Routes>
@@ -26,5 +26,5 @@ createRoot(document.getElementById("root")!).render(
         <Route path="acquisition" element={<Acquisition />} />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
