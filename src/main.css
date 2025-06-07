@@ -46,6 +46,16 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }*/
 
+.blogImage {
+  width: 40vw;
+}
+
+@media (max-width: 768px) {
+  .blogImage {
+    width: 80vw;
+  }
+}
+
 #tsparticles canvas {
   filter: blur(2px);
 }

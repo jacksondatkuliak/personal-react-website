@@ -1,11 +1,6 @@
 import "../main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const imageStyle = {
-  width: "40vw",
-  margin: "1vw",
-};
-
 /**
  * Useful resources for beginners starting AP
  * @returns Resources blog post
@@ -188,7 +183,7 @@ function Resources() {
         And finally, heres a few more pictures I didn't know where else to put
         on in the blog. I hope you like my cat.
       </p>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap"}}>
         <img
           src="/images/blog/resources/noah1.jpeg"
           className="image-with-border "
@@ -197,6 +192,7 @@ function Resources() {
           src="/images/blog/resources/noah2.jpeg"
           className="image-with-border"
         />
+        <img src="/images/blog/resources/untracked.jpeg" className="image-with-border" />
       </div>
     </>
   );

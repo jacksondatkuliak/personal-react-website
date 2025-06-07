@@ -38,7 +38,7 @@ function Contact() {
         <p>
           <a
             href="/processes.xpsm"
-            className="text-link"
+            className="text-link-alt"
             target="_blank"
             rel="noopener"
           >

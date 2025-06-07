@@ -39,7 +39,7 @@ function ImageContainer(props: Props) {
             href={props.imageLink}
             className="text-link"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferer"
           >
             {props.name}
           </a>

@@ -60,7 +60,19 @@ function Blog() {
             </h3>
           </div>
         </div>
-        <div style={{ paddingTop: "20px" }}>
+        <div>
+          <p
+            style={{
+              paddingTop: "20px",
+              textAlign: "center",
+              fontSize: "1.2rem",
+            }}
+          >
+            Welcome to my blog page! Click on the links at the top to read an
+            article.
+          </p>
+        </div>
+        <div style={{ paddingTop: "20px", fontSize: "1.1rem" }}>
           <Outlet />
         </div>
       </div>
