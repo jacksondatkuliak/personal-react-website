@@ -1,5 +1,6 @@
 import "./main.css";
 import { Outlet } from "react-router";
+import { NavLink } from "react-router";
 
 const containerStyle = {
   width: "90vw",
@@ -16,9 +17,9 @@ function Blog() {
       <div style={containerStyle}>
         <div style={{ display: "flex" }}>
           <h4 style={{ marginRight: "3vw" }}>
-            <a className="text-link" href="/blog">
+            <NavLink className="text-link" to="/blog">
               Blog
-            </a>
+            </NavLink>
           </h4>
           <div
             style={{
@@ -28,9 +29,9 @@ function Blog() {
             }}
           >
             <h3>
-              <a
+              <NavLink
                 className="text-link-alt"
-                href="/blog/acquisition"
+                to="/blog/acquisition"
                 style={{
                   fontSize: "80%",
                   paddingRight: "30px",
@@ -38,25 +39,25 @@ function Blog() {
                 }}
               >
                 What is AP: Image Acquisition
-              </a>
+              </NavLink>
             </h3>
             <h3>
-              <a
+              <NavLink
                 style={{ fontSize: "80%", paddingRight: "30px" }}
                 className="text-link-alt"
-                href="/blog/processing"
+                to="/blog/processing"
               >
                 What is AP: Image Processing
-              </a>
+              </NavLink>
             </h3>
             <h3>
-              <a
+              <NavLink
                 className="text-link-alt"
-                href="/blog/resources"
+                to="/blog/resources"
                 style={{ fontSize: "80%" }}
               >
                 Beginner Resources
-              </a>
+              </NavLink>
             </h3>
           </div>
         </div>
