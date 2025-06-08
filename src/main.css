@@ -50,9 +50,29 @@
   width: 40vw;
 }
 
+.blogLink {
+  font-size: 125%;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.4); /* faded white underline */
+  text-decoration-thickness: 1px; /* thinner line */
+  text-underline-offset: 2px; /* optional: moves the underline slightly down */
+  color: inherit;
+  transition: color 0.1s ease;
+}
+
+.blogTopLink {
+  display: inline;
+}
+
 @media (max-width: 768px) {
   .blogImage {
     width: 80vw;
+  }
+  .blogLink {
+    font-size: 1rem;
+  }
+  .blogTopLink {
+    display: none;
   }
 }
 

@@ -341,7 +341,14 @@ function Home() {
         }}
       >
         {/** top text div */}
-        <div style={{ width: "100%", textAlign: "center", fontSize: "1.2rem" }}>
+        <div
+          style={{
+            width: "90%",
+            textAlign: "center",
+            fontSize: "1.2rem",
+            margin: "auto",
+          }}
+        >
           <p>
             Processing done with PixInsight/Siril/Photoshop. I also use the
             RC-Astro plugins for PixInsight, including BlurXTerminator.

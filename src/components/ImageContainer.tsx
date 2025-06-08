@@ -12,7 +12,10 @@ type Props = {
   date: string; // date
 };
 
-const image_style = { width: "60%", padding: "0%" };
+const image_style = {
+  width: window.innerWidth < 768 ? "100%" : "60%",
+  padding: "0%",
+};
 const name_style = {
   paddingTop: "10px",
   marginBottom: "0px",
