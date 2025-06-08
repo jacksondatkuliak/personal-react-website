@@ -204,7 +204,7 @@ const images = [
     date: "8/19/2023 - 9/10/2023",
   },
   {
-    image: "images/vdB139.jpg",
+    image: "images/vdb139.jpg",
     name: "vdB139/141 - Iris/Ghost Nebulae",
     imageLink: "https://www.astrobin.com/q35btn/",
     int_time: "14 hours",
