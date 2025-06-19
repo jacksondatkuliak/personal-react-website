@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { ExternalLink } from "lucide-react";
 
 /**
  * Header with NavLinks
@@ -6,6 +7,17 @@ import { NavLink } from "react-router";
  */
 function Header() {
   const link_style = { paddingRight: "20px" };
+  const external_link_style = {
+    ...link_style,
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "4px",
+  };
+  const lucide_external_link_style = {
+    width: "1em",
+    height: "1em",
+    verticalAlign: "middle",
+  };
   return (
     <header
       style={{
@@ -41,13 +53,22 @@ function Header() {
         }}
       >
         <a
-          style={link_style}
+          style={external_link_style}
+          className="text-link"
+          href="https://github.com/jacksondatkuliak"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub <ExternalLink style={lucide_external_link_style} />
+        </a>
+        <a
+          style={external_link_style}
           className="text-link"
           href="https://www.astrobin.com/users/jdat"
           target="_blank"
           rel="noopener"
         >
-          AstroBin
+          AstroBin <ExternalLink style={lucide_external_link_style} />
         </a>
         <NavLink style={link_style} className="text-link" to="/blog">
           Blog
@@ -56,7 +77,7 @@ function Header() {
           Contact
         </NavLink>
         {/*<NavLink style={link_style} className="text-link" to="/about">
-          About
+          Aboutz
         </NavLink>*/}
       </div>
     </header>
