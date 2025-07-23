@@ -1,6 +1,5 @@
 import "./main.css";
 import ImageContainer from "./components/ImageContainer";
-import { useEffect, useRef, useState } from "react";
 
 // Images
 const images = [
@@ -317,29 +316,6 @@ const images = [
 ];
 
 function Home() {
-  const [visibleCount, setVisibleCount] = useState(10); // Start with 5 images
-  const loadMoreRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && visibleCount < images.length) {
-          setVisibleCount((prev) => prev + 50); // Load 5 more
-        }
-      },
-      { threshold: 1.0 }
-    );
-
-    if (loadMoreRef.current) {
-      observer.observe(loadMoreRef.current);
-    }
-
-    return () => {
-      if (loadMoreRef.current) {
-        observer.unobserve(loadMoreRef.current);
-      }
-    };
-  }, [visibleCount]);
   return (
     <>
       {/** page container div */}
@@ -368,12 +344,9 @@ function Home() {
         </div>
         <div style={{ width: "100%", textAlign: "center" }}>
           {/** ImageContainers */}
-          {images.slice(0, visibleCount).map((img, index) => (
+          {images.map((img, index) => (
             <ImageContainer key={index} {...img} />
           ))}
-
-          {/* load more images */}
-          <div ref={loadMoreRef} style={{ height: "10vh" }} />
         </div>
       </div>
     </>
