@@ -5,6 +5,17 @@ import { useEffect, useRef, useState } from "react";
 // Images
 const images = [
   {
+    image: "images/sho_sadr.jpg",
+    name: "SH2-108 - Sadr Region SHO",
+    imageLink: "",
+    int_time: "3.8 hours",
+    camera: "ASI 294MM Pro",
+    fl: "335mm f/4.7",
+    mount: "Skywatcher HEQ5 Pro",
+    filters: "Antlia EDGE 4.5nm SHO",
+    date: "7/14/2025",
+  },
+  {
     image: "images/m45.jpg",
     name: "M45 - Pleiades",
     imageLink: "https://www.astrobin.com/2p28qh/",
