@@ -8,7 +8,7 @@ const images = [
     image: "images/sho_sadr.jpg",
     name: "SH2-108 - Sadr Region SHO",
     imageLink: "",
-    int_time: "3.8 hours",
+    int_time: "13 hours",
     camera: "ASI 294MM Pro",
     fl: "335mm f/4.7",
     mount: "Skywatcher HEQ5 Pro",
