@@ -6,13 +6,13 @@ const images = [
   {
     image: "images/sho_sadr.jpg",
     name: "SH2-108 - Sadr Region SHO",
-    imageLink: "",
-    int_time: "13 hours",
+    imageLink: "https://www.astrobin.com/ea4681/",
+    int_time: "24 hours",
     camera: "ASI 294MM Pro",
     fl: "335mm f/4.7",
     mount: "Skywatcher HEQ5 Pro",
     filters: "Antlia EDGE 4.5nm SHO",
-    date: "7/14/2025",
+    date: "7/14/2025-7/31/2025",
   },
   {
     image: "images/m45.jpg",
