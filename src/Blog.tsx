@@ -16,48 +16,52 @@ function Blog() {
     <>
       <div style={containerStyle}>
         <div style={{ display: "flex" }}>
-          <h4 style={{ marginRight: "3vw" }}>
-            <NavLink
-              className="text-link-alt blogTopLink"
-              style={{ fontSize: "1.5rem" }}
-              to="/blog"
-            >
-              Blog
-            </NavLink>
-          </h4>
           <div
             style={{
-              marginLeft: "auto",
               display: "flex",
               marginRight: "3vw",
+              flexDirection: window.innerWidth < 768 ? "column" : "row",
             }}
           >
-            <h3>
+            <p>
               <NavLink
                 to="/blog/acquisition"
                 style={{
                   paddingRight: "30px",
-                  marginLeft: "auto",
+                  fontSize: window.innerWidth < 768 ? "1.25em" : "1.5em",
+                  lineHeight: window.innerWidth < 768 ? "0.5em" : "1.4em",
+                  whiteSpace: "nowrap",
                 }}
                 className="blogLink"
               >
                 What is AP: Image Acquisition
               </NavLink>
-            </h3>
-            <h3>
+            </p>
+            <p>
               <NavLink
-                style={{ paddingRight: "30px" }}
+                style={{
+                  paddingRight: "30px",
+                  fontSize: window.innerWidth < 768 ? "1.25em" : "1.5em",
+                  lineHeight: window.innerWidth < 768 ? "0.5em" : "1.4em",
+                }}
                 className="blogLink"
                 to="/blog/processing"
               >
                 What is AP: Image Processing
               </NavLink>
-            </h3>
-            <h3>
-              <NavLink className="blogLink" to="/blog/resources">
+            </p>
+            <p>
+              <NavLink
+                style={{
+                  fontSize: window.innerWidth < 768 ? "1.25em" : "1.5em",
+                  lineHeight: window.innerWidth < 768 ? "0.5em" : "1.4em",
+                }}
+                className="blogLink"
+                to="/blog/resources"
+              >
                 Beginner Resources
               </NavLink>
-            </h3>
+            </p>
           </div>
         </div>
         <div>
@@ -65,14 +69,14 @@ function Blog() {
             style={{
               paddingTop: "20px",
               textAlign: "center",
-              fontSize: "1.2rem",
+              fontSize: "1.2em",
             }}
           >
             Welcome to my blog page! Click on the links at the top to read an
             article.
           </p>
         </div>
-        <div style={{ paddingTop: "20px", fontSize: "1.1rem" }}>
+        <div style={{ paddingTop: "20px", fontSize: "1.1em" }}>
           <Outlet />
         </div>
       </div>

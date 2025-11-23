@@ -19,9 +19,12 @@ const image_style = {
 const name_style = {
   paddingTop: "10px",
   marginBottom: "0px",
-  fontSize: "125%",
+  fontSize: window.innerWidth < 768 ? "100%" : "125%",
 };
-const text_style = { margin: 0, fontSize: "115%" };
+const text_style =
+  window.innerWidth < 768
+    ? { margin: 0, fontSize: "95%" }
+    : { margin: 0, fontSize: "115%" };
 const div_style = { padding: "20px" };
 /**
  * Creates image container to render on main page
