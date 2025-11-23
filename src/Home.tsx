@@ -4,6 +4,17 @@ import ImageContainer from "./components/ImageContainer";
 // Images
 const images = [
   {
+    image: "images/tulip.jpg",
+    name: "SH2-101 - Tulip Nebula SHO",
+    imageLink: "https://www.astrobin.com/yoylzu/",
+    int_time: "127 hours",
+    camera: "ASI 294MM Pro",
+    fl: "335mm f/4.7",
+    mount: "Skywatcher HEQ5 Pro",
+    filters: "Antlia EDGE 4.5nm SHO",
+    date: "8/15/2025-10/1/2025",
+  },
+  {
     image: "images/sho_sadr.jpg",
     name: "SH2-108 - Sadr Region SHO",
     imageLink: "https://www.astrobin.com/ea4681/",
