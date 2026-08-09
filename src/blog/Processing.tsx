@@ -61,11 +61,11 @@ function Processing() {
         }}
       >
         <figure>
-          <img src="/images/blog/whatisap/dark.jpg" className="blogImage" />
+          <img src="/images/blog/whatisap/dark.jpg" className="blog-image" />
           <figcaption>Dark frame (stretched)</figcaption>
         </figure>
         <figure>
-          <img src="/images/blog/whatisap/flat.jpeg" className="blogImage" />
+          <img src="/images/blog/whatisap/flat.jpeg" className="blog-image" />
           <figcaption>Flat Frame</figcaption>
         </figure>
       </div>
@@ -79,13 +79,13 @@ function Processing() {
       >
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/singleframe.jpg"
           />
           <figcaption>Single 3 minute subexposure</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/stacked.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/stacked.jpg" />
           <figcaption>Stacked image with 14 hours of exposure time</figcaption>
         </figure>
       </div>
@@ -121,14 +121,14 @@ function Processing() {
       >
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/unstretched.jpg"
           />
           <figcaption>Linear image with no autostretch</figcaption>
         </figure>
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/autostretched.jpg"
           />
           <figcaption>Linear image with autostretch applied</figcaption>
@@ -178,11 +178,11 @@ function Processing() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/noBE.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/noBE.jpg" />
           <figcaption>A raw stacked image with no processing</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/withBE.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/withBE.jpg" />
           <figcaption>
             Image with DynamicBackgroundExtraction applied in PixInsight
           </figcaption>
@@ -224,12 +224,12 @@ function Processing() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/noblurx.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/noblurx.jpg" />
           <figcaption>Image with no deconvolution</figcaption>
         </figure>
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/withblurx.jpg"
           />
           <figcaption>
@@ -280,11 +280,11 @@ function Processing() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/nospcc.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/nospcc.jpg" />
           <figcaption>Image with no color calibration applied</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/spcc.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/spcc.jpg" />
           <figcaption>
             Image with SpectrophotometricColorCalibration applied in PixInsight
           </figcaption>
@@ -341,11 +341,17 @@ function Processing() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/stretch1.jpg" />
+          <img
+            className="blog-image"
+            src="/images/blog/whatisap/stretch1.jpg"
+          />
           <figcaption>Starless image after a small stretch</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/stretch2.jpg" />
+          <img
+            className="blog-image"
+            src="/images/blog/whatisap/stretch2.jpg"
+          />
           <figcaption>Starless image that is almost fully stretched</figcaption>
         </figure>
       </div>
@@ -384,11 +390,11 @@ function Processing() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/nonr.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/nonr.jpg" />
           <figcaption>Image with no noise reduction applied</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/noisex.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/noisex.jpg" />
           <figcaption>
             Image with NoiseXTerminator applied in PixInsight
           </figcaption>
@@ -423,11 +429,14 @@ function Processing() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/stars.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/stars.jpg" />
           <figcaption>An image with stars</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/starless.jpg" />
+          <img
+            className="blog-image"
+            src="/images/blog/whatisap/starless.jpg"
+          />
           <figcaption>Image with stars removed by StarXTerminator</figcaption>
         </figure>
       </div>

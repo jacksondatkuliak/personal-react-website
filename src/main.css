@@ -46,11 +46,11 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
 }*/
 
-.blogImage {
+.blog-image {
   width: 40vw;
 }
 
-.blogLink {
+.blog-link {
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.4); /* faded white underline */
   text-decoration-thickness: 1px; /* thinner line */
@@ -71,19 +71,12 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
-.blogTopLink {
-  display: inline;
-}
-
 @media (max-width: 768px) {
-  .blogImage {
+  .blog-image {
     width: 80vw;
   }
-  .blogLink {
+  .blog-link {
     font-size: 1rem;
-  }
-  .blogTopLink {
-    display: none;
   }
 }
 

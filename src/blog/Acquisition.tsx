@@ -95,7 +95,7 @@ function Acquisition() {
       >
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/startracker.jpg"
           />
           <figcaption>
@@ -104,7 +104,7 @@ function Acquisition() {
         </figure>
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/new_goto_setup.jpg"
           />
           <figcaption>
@@ -155,14 +155,14 @@ function Acquisition() {
       >
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/bahtinov_mask.jpg"
           />
           <figcaption>Some bahtinov masks I've 3D printed</figcaption>
         </figure>
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Simulation_of_a_bahtinov_mask_diffraction_pattern_when_focusing.gif"
           />
           <figcaption>
@@ -197,7 +197,7 @@ function Acquisition() {
       >
         <figure>
           <img
-            className="blogImage"
+            className="blog-image"
             src="/images/blog/whatisap/newsetup_annotated.jpg"
           />
           <figcaption>An older setup I had with my cat Noah</figcaption>
@@ -257,11 +257,11 @@ function Acquisition() {
         }}
       >
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/asiair.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/asiair.jpg" />
           <figcaption>The popular ZWO ASIAir</figcaption>
         </figure>
         <figure>
-          <img className="blogImage" src="/images/blog/whatisap/nina.jpg" />
+          <img className="blog-image" src="/images/blog/whatisap/nina.jpg" />
           <figcaption>
             NINA and PHD2 working together to run my setup
           </figcaption>

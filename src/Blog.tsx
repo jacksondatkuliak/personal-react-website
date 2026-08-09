@@ -32,7 +32,7 @@ function Blog() {
                   lineHeight: window.innerWidth < 768 ? "0.5em" : "1.4em",
                   whiteSpace: "nowrap",
                 }}
-                className="blogLink"
+                className="blog-link"
               >
                 What is AP: Image Acquisition
               </NavLink>
@@ -44,7 +44,7 @@ function Blog() {
                   fontSize: window.innerWidth < 768 ? "1.25em" : "1.5em",
                   lineHeight: window.innerWidth < 768 ? "0.5em" : "1.4em",
                 }}
-                className="blogLink"
+                className="blog-link"
                 to="/blog/processing"
               >
                 What is AP: Image Processing
@@ -56,7 +56,7 @@ function Blog() {
                   fontSize: window.innerWidth < 768 ? "1.25em" : "1.5em",
                   lineHeight: window.innerWidth < 768 ? "0.5em" : "1.4em",
                 }}
-                className="blogLink"
+                className="blog-link"
                 to="/blog/resources"
               >
                 Beginner Resources
